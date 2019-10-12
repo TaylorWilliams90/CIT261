@@ -39,7 +39,7 @@
     margin: 20px;
     width: 200px;
     height: 200px;
-    background-image: url("img/taypics.jpg");
+    background-image: url("/img/taypics.jpg");
     background-position: center;
     transition: height 3s;
     -webkit-transition: height 3s;
