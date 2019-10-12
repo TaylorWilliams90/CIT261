@@ -34,3 +34,15 @@
 .height-box:hover{
     height: 500px;
 }
+
+.pic-box{
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    background-image: url("img/taypics.jpg");
+    background-position: center;
+    transition: height 3s;
+    -webkit-transition: height 3s;
+    display: block;
+    float: left;
+}
