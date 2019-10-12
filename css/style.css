@@ -17,3 +17,16 @@
 .grow-box:hover{
     width: 500px;
 }
+
+.height-box{
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(72, 219, 84);
+    transition: height 3s;
+    -webkit-transition: height 3s;
+}
+
+.height-box:hover{
+    height: 500px;
+}
