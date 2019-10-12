@@ -4,3 +4,16 @@
     background-color: #5fd4fa;
     border-radius: 8px;
 }
+
+.grow-box{
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    transition: width 3s;
+    -webkit-transition: width 3s;
+}
+
+.grow-box:hover{
+    width: 500px;
+}
