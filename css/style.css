@@ -41,8 +41,13 @@
     height: 200px;
     background-image: url("/CIT261/img/taypics.jpg");
     background-position: center;
-    transition: height 3s;
-    -webkit-transition: height 3s;
+    transition: height 3s, width 5s;
+    -webkit-transition: height 3s, width 5s;
     display: block;
     float: left;
+}
+
+.pic-box:hover{
+    height: 400px;
+    width: 400px;
 }
