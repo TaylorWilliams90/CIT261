@@ -1,3 +1,25 @@
+@keyframes fly {
+    0%  {left: 0px; top: 0px;}
+    25% {left: 20%; top: 0px;}
+    50% {left: 30%; top: 0px;}
+    75% {left: 75%; top: 0px;}
+    100% {left: 100%; top: 0px;}
+}
+
+@keyframes pluse {
+    0%  {box-shadow: violet 0px 0px 0px;}
+    25%  {box-shadow: violet 0px 0px 20px;}
+    50%  {box-shadow: violet 0px 0px 0px;}
+    75%  {box-shadow: violet 0px 0px 30px;}
+    100%  {box-shadow: violet 0px 0px 0px;}
+}
+
+@keyframes jump {
+    0% {top: 800px;}
+    50% {top: 0px;}
+    100% {top: 800px;}
+}
+
 .box {
     padding: 30px;
     margin: 25px;
@@ -50,4 +72,42 @@
 .pic-box:hover{
     height: 400px;
     width: 400px;
+}
+
+.fly-box {
+    width: 100px;
+    height: 75px;
+    position: relative;
+    background-color: lightblue;
+    animation-name: fly;
+    animation-duration: 8s;
+}
+
+.pluse-box {
+    width: 204px;
+    height: 50px;
+    margin: 50px;
+    text-align: center;
+    padding: 7px;
+    border-radius: 15px;
+    position: relative;
+    background-color: teal;
+    animation-name: pluse;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+.jump-box {
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+    text-align: center;
+    padding: 7px;
+    border-radius: 15px;
+    position: relative;
+    background-color: url(/img/jumping-icon-18.jpg);
+    animation-name: jump;
+    animation-duration: 8s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
 }
