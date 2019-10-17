@@ -15,9 +15,9 @@
 }
 
 @keyframes jump {
-    0% {top: 800px;}
+    0% {top: 300px;}
     50% {top: 0px;}
-    100% {top: 800px;}
+    100% {top: 300px;}
 }
 
 .box {
@@ -105,7 +105,7 @@
     padding: 7px;
     border-radius: 15px;
     position: relative;
-    background-color: url(/img/jumping-icon-18.jpg);
+    background-color: url("/CIT261/img/jumping-icon-18.jpg");
     animation-name: jump;
     animation-duration: 8s;
     animation-timing-function: ease;
