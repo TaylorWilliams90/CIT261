@@ -105,7 +105,7 @@
     padding: 7px;
     border-radius: 15px;
     position: relative;
-    background-color: url("/CIT261/img/jumping-icon-18.jpg");
+    background-image: url("/CIT261/img/jumping-icon-18.jpg");
     animation-name: jump;
     animation-duration: 8s;
     animation-timing-function: ease;
