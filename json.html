@@ -55,9 +55,9 @@
       </footer>
 
       <script>
-        var myJSON = '{"name":"Taylor", "last":"Williams", "age":29, "city":"Orem", "class":"CIT 261"}';
+        var myJSON = '{"name":"Taylor", "last":"Williams", "age":29, "city":"Orem", "class":"CIT 261, CS 308, CIT 313"}';
         var myObj = JSON.parse(myJSON);
-        document.getElementById("dataName").innerHTML = "First Name: " + myObj.name;
+        document.getElementById("dataName").innerHTML = "First Name:" + " " + myObj.name;
         document.getElementById("dataLast").innerHTML = "Last Name: " + myObj.last;
         document.getElementById("dataAge").innerHTML = "Age: " + myObj.age;
         document.getElementById("dataClass").innerHTML = "Class: " + myObj.class;
