@@ -1,0 +1,7 @@
+var myJSON = '{"name":"Taylor", "last":"Williams", "age":29, "city":"New York", "img":"..img/taypics", "class":"CIT 261"}';
+var myObj = JSON.parse(myJSON);
+document.getElementById("dataName").innerHTML = "First Name: " + myObj.name;
+document.getElementById("dataLast").innerHTML = "Last Name: " + myObj.last;
+document.getElementById("dataAge").innerHTML = "Age: " + myObj.age;
+document.getElementById("dataClass").innerHTML = "Class: " + myObj.class;
+document.getElementById("dataClass").innerHTML = "<img src:" + myObj.img + ">";
