@@ -15,14 +15,8 @@
     <body id="container">
 
       <div class="container">
-        <h1>Topics</h1>
-        <div class="row">
-          <canvas id="ty" width="800" height="450">
-            <!-- Here be fall-back content -->
-            Type what you want.
-        </canvas>
-        
-        </div>
+        <h1>VIdio Audio and Cavas</h1>
+
         <div class="row">
         <video width="600" controls>
             <source src="img/zoom_1.mp4" type="video/mp4">
@@ -34,7 +28,21 @@
             Your browser doesn't support HTML 5 audio.
         </audio>
         </div>
-
+        <div class="row">
+          <canvas id="myCanvas" width="600" height="100" style="border:1px solid #d3d3d3;">
+            Your browser does not support the HTML5 canvas tag.</canvas>
+            
+            <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.font = "30px Arial";
+            ctx.fillText("MY NAME IS TAYLOR",10,50);
+            </script>
+            
+            </body>
+            </html>
+        
+        </div>
 
       </div>
       <footer>
