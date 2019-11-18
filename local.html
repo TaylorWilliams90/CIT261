@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Jounal | Home Page </title>
+
+        <meta charset="utf-8"/>
+        
+        <meta name="author" content="Taylor Williams">
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    </head>
+
+    <body id="container">
+
+      <div class="container">
+        <h1>JSON</h1>
+
+        <p>This pages is to document all the things that I know about JSON. 
+            I will be making sure that I know the ins and outs of JSON</p>
+
+        <p>JSON: JavaScript Object Notation.</p>
+
+           <p>JSON is a syntax for storing and exchanging data.</p>
+            
+           <p>JSON is text, written with JavaScript object notation.</p>
+
+           <div class="row" style="padding: 20px; background-color: #4CAF50;">
+            <div class="col-4">
+
+                       <p id="dataName"></p>
+                       <p id="dataLast"></p>
+                       <p id="dataAge"></p>
+                       <p id="dataClass"></p>
+                        <p id="rusult"></p>
+                </a>
+            </div>
+            <div class="col-4">
+
+                        <img src="img/taypics.jpg" alt="pic" style="width: 100px">
+
+                </a>
+            </div>
+            <div class="col-4">
+
+                        <p id="dataCity"></p>
+
+                </a>
+            </div>
+        </div>
+      </div>
+      <footer>
+
+      </footer>
+
+      <script>
+        // Check browser support
+        if (typeof(Storage) !== "undefined") {
+          // Store
+          localStorage.setItem("dataName", "Taylor");
+          localStorage.setItem("dataLast", "Williams");
+          localStorage.setItem("dataAge", "29");
+          localStorage.setItem("dataClass", "CIT 261");
+          localStorage.setItem("dataCity", "Orem")
+          // Retrieve
+          document.getElementById("dataName").innerHTML = localStorage.getItem("dataName");
+          document.getElementById("dataLast").innerHTML = localStorage.getItem("dataLast");
+          document.getElementById("dataAge").innerHTML = localStorage.getItem("dataAge");
+          document.getElementById("dataClass").innerHTML = localStorage.getItem("dataClass");
+          document.getElementById("dataCity").innerHTML = localStorage.getItem("dataCity");
+
+        } else {
+          document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+        }
+        </script>
+    </body>
+</html>
