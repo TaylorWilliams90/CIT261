@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Jounal | Home Page </title>
+
+        <meta charset="utf-8"/>
+        
+        <meta name="author" content="Taylor Williams">
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    </head>
+
+    <body id="container">
+
+      <div class="container">
+        <h1>JavaScript Objects</h1>
+
+        <p>This pages is to document all the things that I know about Objects. 
+            I will be making sure that I know the ins and outs of Objects</p>
+
+        <p>Objects: JavaScript stores the data locally on the browser.</p>
+            
+           <p>You are able to call that iformation by setting the variable and adding data to the variable </p>
+
+           <div class="row" style="padding: 20px; background-color: #4CAF50;">
+            <div class="col-4">
+
+                       <p id="dataName"></p>
+                       <p id="dataLast"></p>
+                       <p id="dataAge"></p>
+                       <p id="dataClass"></p>
+                </a>
+            </div>
+            <div class="col-4">
+
+                        <img src="img/taypics.jpg" alt="pic" style="width: 100px">
+
+                </a>
+            </div>
+            <div class="col-4">
+
+                        <p id="dataCity"></p>
+
+                </a>
+            </div>
+        </div>
+      </div>
+      <footer>
+
+      </footer>
+
+      <script>
+        // Create an object:
+        var person = {firstName:"Taylor", lastName:"Williams", age:29, class:"CTI 261", city:"Orem"};
+
+        // Display some data from the object:
+        document.getElementById("dataName").innerHTML = person.firstName;
+        document.getElementById("dataLast").innerHTML = person.lastName;
+        document.getElementById("dataAge").innerHTML = person.age;
+        document.getElementById("dataClass").innerHTML = person.class;
+        document.getElementById("dataCity").innerHTML = person.city;
+       
+        </script>
+    </body>
+</html>
