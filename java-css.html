@@ -15,29 +15,29 @@
     <body id="container">
 
       <div class="container">
-        <h1>javascript Events</h1>
+        <h1>javascript CCS</h1>
 
         <div class="row">
-            <div class="col-4 demoHover">
-                <p id=""></p>
+            <div class="col-4" id="block1">
+                javascript is changing the CSS
             </div> 
-            <div class="col-4 ">
-                <button onclick="alert('Hello')">Click Me</button>
+            <div class="col-4" id="block2">
+                javascript is changing the CSS
             </div> 
-            <div class="col-4">
-                <button onclick="document.getElementById('demo').innerHTML = Date()">What is the time?</button>
-                <p id="demo"></p>
+            <div class="col-4" id="block3">
+                javascript is changing the CSS
             </div>        
         </div>
         <script>
-            function big(x){
-                x.style.padding = "15px";
-                x.style.font = "initial";
-            }
-            function normal(x){
-                x.style.padding = "0px";
-                x.style.font = "inherit";
-            }
+            document.getElementById("block1").style.background = "blue";
+            document.getElementById("block2").style.background = "gray";
+            document.getElementById("block3").style.background = "green";
+            document.getElementById("block1").style.padding = "30px";
+            document.getElementById("block2").style.padding = "30px";
+            document.getElementById("block3").style.padding = "30px";
+            document.getElementById("block1").style.color= "#fff";
+            document.getElementById("block2").style.color= "#fff";
+            document.getElementById("block3").style.color= "#fff";
         </script>
       </div>
       <footer>
