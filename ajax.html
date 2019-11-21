@@ -33,20 +33,27 @@
                     <button type="button" onclick="loadDoc()">Change Content</button>
                     
                     <script>
-                    function loadDoc() {
-                      var xhttp = new XMLHttpRequest();
-                      xhttp.onreadystatechange = function() {
-                        if (this.readyState == 4 && this.status == 200) {
-                          document.getElementById("text").innerHTML = this.responseText;
+                        function loadDoc() {
+                            var xhttp;
+                            if (window.XMLHttpRequest) {
+                                // code for modern browsers
+                                xhttp = new XMLHttpRequest();
+                                } else {
+                                // code for IE6, IE5
+                                xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+                            }
+                            xhttp.onreadystatechange = function() {
+                                if (this.readyState == 4 && this.status == 200) {
+                                document.getElementById("text").innerHTML = this.responseText;
+                                }
+                            };
+                            xhttp.open("GET", "ajax_txt.txt", true);
+                            xhttp.send();
                         }
-                      };
-                      xhttp.open("GET", "ajax_txt.txt", true);
-                      xhttp.send();
-                    }
                     </script>
             </div>
             <div class="col-4">
-                
+
             </div>
             <div class="col-4">
                 
