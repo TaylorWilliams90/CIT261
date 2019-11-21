@@ -15,7 +15,7 @@
     <body id="container">
 
       <div class="container">
-        <h1>JavaScript Objects</h1>
+        <h1>JavaScript DOM </h1>
 
         <p>This pages is to document all the things that I know about Objects. 
             I will be making sure that I know the ins and outs of Objects</p>
@@ -26,18 +26,37 @@
 
            <div class="row">
             <div class="col-4">
-                <button>Get P tag from DOM</button>
-                <button></button>
+                <h4>Event with DOM</h4>
+                <button onclick="myfunction(this)">Click Me</button>
+                <p>there is a if statement on this button.</p> 
             </div>
             <div class="col-4">
-                       
+                <h4>DOM text</h4>
+                <p id="demo"></p>
             </div>
+            <div class="col-4">
+                <h4>DOM Method</h4>
+            <script>
+                document.write(Date());
+                </script>
+                </div>
         </div>
       </div>
       <footer>
 
       </footer>
+      <script>
+        document.getElementById("demo").innerHTML = "This is coming from the DOM, this is not written in HTML";
 
+        function myfunction(id) {
+            if (id.innerHTML == "you clicked me"){
+                id.innerHTML = "Click me";
+            } else{
+                id.innerHTML = "you clicked me";
+            }
+            
+        }
+        </script>
 
 </body>
 </html>
