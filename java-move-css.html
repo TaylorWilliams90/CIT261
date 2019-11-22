@@ -19,18 +19,43 @@
 
         <div class="row">
             <div class="col-4 demoHover">
-                <button onclick="">Hover over me</button>
+                <h4>Rotate</h4>
+                <button onclick="rotate(this)">x</button>
             </div> 
             <div class="col-4 ">
-                <button onclick="">Click Me</button>
+                <h4>Jumping</h4>
+                <button id="jumping" >Click Me</button>
             </div> 
             <div class="col-4">
-                <button onclick="">What is the time?</button>
-                <p id="demo"></p>
+                <h4>Grow</h4>
+                <button id="growing">I can be big</button>
+                
             </div>        
         </div>
         <script>
+            growing.onclick = function() {
+            this.style.fontSize = '26px';
+            this.style.color = 'blue';
+            };
 
+            function myMove() {
+            var elem = document.getElementById("myAnimation");   
+            var pos = 0;
+            var id = setInterval(frame, 10);
+            function frame() {
+                if (pos == 100) {
+                clearInterval(id);
+                } else {
+                pos++; 
+                elem.style.top = pos + 'px';  
+                }
+            }
+            }
+
+            growing.onclick = function() {
+            this.style.fontSize = '26px';
+            this.style.color = 'blue';
+            };
         </script>
       </div>
       <footer>
