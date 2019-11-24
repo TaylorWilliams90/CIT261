@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Jounal | Home Page </title>
+
+        <meta charset="utf-8"/>
+        
+        <meta name="author" content="Taylor Williams">
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    </head>
+
+    <body id="container">
+
+      <div class="container">
+        <h1>JavaScript </h1>
+
+           <div class="row">
+            <div class="col-4">
+                <h4>IF Statement</h4>
+                <button onclick="myfunction(this)">I can Changed</button> 
+            </div>
+            <div class="col-4">
+                <h4>FOR LOOP 5 times</h4>
+                <script>
+                    var x; 
+                    for (x = 0; x <= 4; x++)  
+                    { 
+                        document.write("Value of x:" + x + "<br />"); 
+                    }
+                </script>
+            </div>
+            <div class="col-4">
+                <h4>Date function</h4>
+            <script>
+                document.write(Date());
+                </script>
+                </div>
+        </div>
+      </div>
+      <footer>
+
+      </footer>
+      <script>
+         
+        function myfunction(id) {
+            if (id.innerHTML == "you clicked me"){
+                id.innerHTML = "I can Changed";
+            } else{
+                id.innerHTML = "you clicked me";
+            }
+            
+        }
+
+        </script>
+
+</body>
+</html>
