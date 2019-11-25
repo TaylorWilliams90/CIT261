@@ -16,21 +16,12 @@
 
       <div class="container">
         <h1>javascript Animation, Transform, Transtions</h1>
-
+        <button  onclick="move()">Click to Move</button>
         <div class="row">
-            <div class="col-4 demoHover">
-                <h4>Rotate</h4>
-                <button onclick="rotate(this)">x</button>
-            </div> 
-            <div class="col-4 ">
-                <h4>Jumping</h4>
-                <button id="jumping" >Click Me</button>
-            </div> 
-            <div class="col-4">
-                <h4>Grow</h4>
-                <button id="growing">I can be big</button>
-                
-            </div>        
+          
+                <div class="slide-box">
+                        <h4>moving box</h4>
+                    </div>       
         </div>
         <script>
             growing.onclick = function() {
@@ -61,5 +52,13 @@
       <footer>
 
       </footer>
+
+      <script>
+          var box = document.getElementsByClassName('slide-box')[0];
+          function move(){
+            box.style.WebkitAnimationPlayState = "running";
+          }
+
+      </script>
     </body>
 </html>

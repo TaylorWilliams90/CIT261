@@ -15,20 +15,25 @@
     <body id="container">
 
       <div class="container">
-        <h1>JavaScript DOM </h1>
+        <h1>JavaScript </h1>
 
            <div class="row">
             <div class="col-4">
-                <h4>Event with DOM</h4>
-                <button onclick="myfunction(this)">Click Me</button>
-                <p>there is a if statement on this button.</p> 
+                <h4>IF Statement</h4>
+                <button onclick="myfunction(this)">I can Changed</button> 
             </div>
             <div class="col-4">
-                <h4>DOM text</h4>
-                <p id="demo"></p>
+                <h4>FOR LOOP 5 times</h4>
+                <script>
+                    var x; 
+                    for (x = 0; x <= 4; x++)  
+                    { 
+                        document.write("Value of x:" + x + "<br />"); 
+                    }
+                </script>
             </div>
             <div class="col-4">
-                <h4>DOM Method</h4>
+                <h4>Date function</h4>
             <script>
                 document.write(Date());
                 </script>
@@ -39,16 +44,16 @@
 
       </footer>
       <script>
-        document.getElementById("demo").innerHTML = "This is coming from the DOM, this is not written in HTML";
-
+         
         function myfunction(id) {
             if (id.innerHTML == "you clicked me"){
-                id.innerHTML = "Click me";
+                id.innerHTML = "I can Changed";
             } else{
                 id.innerHTML = "you clicked me";
             }
             
         }
+
         </script>
 
 </body>

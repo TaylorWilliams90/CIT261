@@ -6,6 +6,14 @@
     100% {left: 100%; top: 0px;}
 }
 
+@keyframes slide {
+    0%  {left: 0px; top: 0px;}
+    25% {left: 20%; top: 0px;}
+    50% {left: 30%; top: 0px;}
+    75% {left: 75%; top: 0px;}
+    100% {left: 100%; top: 0px;}
+}
+
 @keyframes pluse {
     0%  {box-shadow: violet 0px 0px 0px;}
     25%  {box-shadow: violet 0px 0px 20px;}
@@ -82,6 +90,18 @@
     animation-name: fly;
     animation-duration: 8s;
 }
+
+.slide-box {
+    width: 100px;
+    height: 75px;
+    position: relative;
+    background-color: lightblue;
+    animation-name: slide;
+    animation-duration: 8s;
+    animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+}
+
 
 .pluse-box {
     width: 204px;
