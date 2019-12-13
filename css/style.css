@@ -146,11 +146,17 @@
     }
 
     li.listitems {
+
         list-style: none;
         padding: 5px;
         width: 300px;
         background-color: #c7c6c6;
         margin: 5px;
+        animation-name: flip;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+
     }
 
     li:hover {
@@ -158,11 +164,20 @@
     }
 
 
-    .cross {
+    li.cross {
         text-decoration: line-through;
+        background-color: #de3b3b9e;
+        transition: 2s;
     }
 
     .background {
         padding: 20px; 
         background-color: #4CAF50;
+    }
+
+
+    @keyframes flip{
+        0%,80%{
+            transform: rotateX(360deg);
+        }
     }

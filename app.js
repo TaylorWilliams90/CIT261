@@ -8,7 +8,7 @@ function getlist(){
     
     var item ="";
     for (var i = 0; i < list.length; i++){
-        item += "<li class='listitems'  onclick='addStyle(this)' id='" + i + "'>" + list[i] + "</li>";
+        item += "<li class='listitems'  onclick='addStyle(this)' id='list'>" + list[i] + "</li>";
     }
     document.getElementById("todoList").innerHTML = item;
 
@@ -21,7 +21,7 @@ function addItem(){
     console.log(list);
     var item ="";
     for (var i = 0; i < list.length; i++){
-        item += "<li class='listitems' onclick='addStyle(this)' id='" + i + "'>" + list[i] + "</li>";
+        item += "<li class='listitems' onclick='addStyle(this)' id='list'>" + list[i] + "</li>";
     }
     document.getElementById("todoList").innerHTML = item;
 }
