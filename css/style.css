@@ -144,3 +144,25 @@
     left: 100px;
     transition: left 5s cubic-bezier(.5, -1, .5, 2);
     }
+
+    li.listitems {
+        list-style: none;
+        padding: 5px;
+        width: 300px;
+        background-color: #c7c6c6;
+        margin: 5px;
+    }
+
+    li:hover {
+        text-decoration: line-through;
+    }
+
+
+    .cross {
+        text-decoration: line-through;
+    }
+
+    .background {
+        padding: 20px; 
+        background-color: #4CAF50;
+    }
