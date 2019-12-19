@@ -48,12 +48,9 @@ function loadDoc() {
         if (this.readyState == 4 && this.status == 200) {
             var jsonObj = JSON.parse(http_request.responseText);
 
-            // jsonObj variable now contains the data structure and can
-            // be accessed as jsonObj.name and jsonObj.country.
-            for(var i = 0; i < json.length; i++) {
+
             document.getElementById("Name").innerHTML = jsonObj.name;
-            document.getElementById("Class").innerHTML = jsonObj.message;
-            }
+            document.getElementById("Class").innerHTML = jsonObj.class;
         }
     };
     xhttp.open("GET", "data.json", true);
