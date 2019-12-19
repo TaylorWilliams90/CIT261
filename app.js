@@ -35,24 +35,19 @@ function addItem(){
 }
 
 
-function loadDoc() {
-    var xhttp;
-    if (window.XMLHttpRequest) {
-        // code for modern browsers
-        xhttp = new XMLHttpRequest();
-        } else {
-        // code for IE6, IE5
-        xhttp = new ActiveXObject("Microsoft.XMLHTTP");
-    }
-    xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            var jsonObj = JSON.parse(http_request.responseText);
+var xmlhttp = new XMLHttpRequest();
+var url = "data.json";
 
+xmlhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    var myjson = JSON.parse(this.responseText);
+    myFunction(myjson);
+  }
+};
+xmlhttp.open("GET", url, true);
+xmlhttp.send();
 
-            document.getElementById("Name").innerHTML = jsonObj.name;
-            document.getElementById("Class").innerHTML = jsonObj.class;
-        }
-    };
-    xhttp.open("GET", "data.json", true);
-    xhttp.send();
+function myFunction(myjson) {
+  var out = myjson.name + "<br/>" + myjson.class;
+  document.getElementById("example").innerHTML = out;
 }
