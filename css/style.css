@@ -28,6 +28,12 @@
     100% {top: 300px;}
 }
 
+@keyframes flip{
+    0%,80%{
+        transform: rotateX(360deg);
+    }
+}
+
 .box {
     padding: 30px;
     margin: 25px;
